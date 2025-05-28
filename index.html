@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduspark-Social Studies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4f8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #333;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            flex: 1;
+        }
+        .box {
+            background-color: #000000;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            user-select: none;
+            touch-action: manipulation;
+            display: inline-block;
+            margin: 20px 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 3px solid transparent;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000) border-box;
+            background-size: 400%;
+            animation: border-run 3s linear infinite;
+            z-index: -1;
+        }
+        @keyframes border-run {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 400% 50%; }
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .box h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .papers {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .papers h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .year-section {
+            margin: 20px 0;
+        }
+        .year-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .year-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .year-section li {
+            margin: 10px 0;
+        }
+        .year-section a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .year-section a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: none;
+            text-align: center;
+            color: #0066cc;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        .footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .footer p:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Eduspark-Social Studies</h1>
+    </div>
+    <div class="container">
+        <div class="box" onclick="showPapers('geography')" ontouchstart="showPapers('geography')">
+            <h1>Geography</h1>
+        </div>
+        <div class="box" onclick="showPapers('history')" ontouchstart="showPapers('history')">
+            <h1>History</h1>
+        </div>
+        <div class="box" onclick="showPapers('civics')" ontouchstart="showPapers('civics')">
+            <h1>Civics</h1>
+        </div>
+        <div class="papers" id="geography-papers">
+            <h1>O/L Geography Past Papers (Sinhala Medium)</h1>
+ala Medium)</h1>
+<div class="year-section">
+                <h2>2024/2025</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/32005/20242025-o-l-past-papers/87966/20242025-ol-geography-past-paper-2.pdf" target="_blank">2024/2025 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2023/2024</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/27796/20232024-o-l/85457/20232024-ol-geography-past-paper-and-answers-2.pdf" target="_blank">2023/2024 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2022/2023</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/23693/20222023-o-l/71748/20222023-ol-geography-past-paper-and-answers.pdf" target="_blank">2022/2023 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2021</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8050/2021-o-l/64968/2021-ol-geography-past-paper-and-answers-sinhala-medium-2.pdf" target="_blank">2021 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2020</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8049/2020-o-l/37942/2020-ol-geography-past-paper-and-answers-sinhala-medium-3.pdf" target="_blank">2020 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2019</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8048/2019-o-l/35618/2019-ol-geography-past-paper-sinhala-medium.pdf" target="_blank">2019 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2018</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8047/2018-o-l/35621/2018-ol-geography-past-paper-sinhala-medium.pdf" target="_blank">2018 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2017</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8046/2017-o-l/35624/2017-ol-geography-past-paper-sinhala-medium.pdf" target="_blank">2017 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2016</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8045/2016-o-l/35627/2016-ol-geography-past-paper-sinhala-medium.pdf" target="_blank">2016 Full Paper</a></li>
+                </ul>
+            </div>
+            <a href="#" class="back-link" id="geography-back" onclick="hidePapers('geography')">Back to Main</a>
+        </div>
+        <div class="papers" id="history-papers">
+            <h1>O/L History Past Papers (Sinhala Medium)</h1>
+            <div class="year-section">
+                <h2>2024/2025</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/32005/20242025-o-l-past-papers/86918/20242025-ol-history-past-paper-sinhala-medium.pdf" target="_blank">2024/2025 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2023/2024</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/27796/20232024-o-l/85525/20232024-ol-history-past-paper-and-answers-2.pdf" target="_blank">2023/2024 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2022/2023</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/23693/20222023-o-l/71677/20222023-ol-history-past-paper-and-answers.pdf" target="_blank">2022/2023 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+<h2>2021</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/27515/2021-o-l-papers/71679/2021-ol-history-past-paper-and-answers-sinhala-medium-3.pdf" target="_blank">2021 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2020</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8049/2020-o-l/19734/2019-ol-history-sinhala-medium.pdf" target="_blank">2020 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2019</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8048/2019-o-l/33223/2019-ol-history-past-paper-sinhala-medium.pdf" target="_blank">2019 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2018</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8047/2018-o-l/33226/2018-ol-history-past-paper-sinhala-medium.pdf" target="_blank">2018 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2017</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8046/2017-o-l/33229/2017-ol-history-past-paper-and-answers-sinhala-medium.pdf" target="_blank">2017 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2016</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8045/2016-o-l/33232/2016-ol-history-past-paper-and-answers-sinhala-medium.pdf" target="_blank">2016 Full Paper</a></li>
+                </ul>
+            </div>
+            <a href="#" class="back-link" id="history-back" onclick="hidePapers('history')">Back to Main</a>
+        </div>
+        <div class="papers" id="civics-papers">
+            <h1>O/L Civic Education Past Papers (Sinhala Medium)</h1>
+            <div class="year-section">
+                <h2>2024/2025</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/32005/20242025-o-l-past-papers/87977/20242025-ol-civic-education-past-paper-2.pdf" target="_blank">2024/2025 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2023/2024</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/27796/20232024-o-l/85320/20232024-ol-civic-education-past-paper-and-answers-2.pdf" target="_blank">2023/2024 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2022/2023</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/23693/20222023-o-l/72359/20222023-ol-civics-past-paper-and-answers.pdf" target="_blank">2022/2023 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2021</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8050/2021-o-l/65033/2021-ol-civic-past-paper-and-answers-sinhala-medium.pdf" target="_blank">2021 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2020</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8049/2020-o-l/37903/2020-ol-civic-education-past-paper-sinhala-medium.pdf" target="_blank">2020 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2019</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8048/2019-o-l/35642/2019-ol-civic-education-past-paper-sinhala-medium.pdf" target="_blank">2019 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2018</h2>
+                <ul>
+<li><a href="https://pastpapers.wiki/download/8047/2018-o-l/35645/2018-ol-civic-education-past-paper-sinhala-medium.pdf" target="_blank">2018 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2017</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8046/2017-o-l/35648/2017-ol-civic-education-past-paper-sinhala-medium.pdf" target="_blank">2017 Full Paper</a></li>
+                </ul>
+            </div>
+            <div class="year-section">
+                <h2>2016</h2>
+                <ul>
+                    <li><a href="https://pastpapers.wiki/download/8045/2016-o-l/35651/2016-ol-civic-education-past-paper-sinhala-medium.pdf" target="_blank">2016 Full Paper</a></li>
+                </ul>
+            </div>
+            <a href="#" class="back-link" id="civics-back" onclick="hidePapers('civics')">Back to Main</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Eduspark</p>
+        <p>Providing quality education resources</p>
+    </div>
+    <script>
+        function showPapers(subject) {
+            document.getElementById(subject + '-papers').style.display = 'block';
+            document.getElementById(subject + '-back').style.display = 'block';
+            document.querySelectorAll('.box').forEach(box => box.style.display = 'none');
+        }
+
+        function hidePapers(subject) {
+            document.getElementById(subject + '-papers').style.display = 'none';
+            document.getElementById(subject + '-back').style.display = 'none';
+            document.querySelectorAll('.box').forEach(box => box.style.display = 'inline-block');
+        }
+    </script>
+</body>
+</html>
